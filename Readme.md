@@ -36,76 +36,76 @@ A full-stack application for managing a sweet shop with customer registration, b
 ### Using Command Prompt (Windows)
 
 #### Step 1: Clone the repository
-\`\`\`cmd
-git clone https://github.com/yourusername/sweet-shop-management.git
+```cmd
+git clone https://github.com/saitamaOwO/incubyte_sweetshop.git
 cd sweet-shop-management
-\`\`\`
+```
 
 #### Step 2: Setup Backend
-\`\`\`cmd
+```cmd
 cd backend
 npm install
-\`\`\`
+```
 
 #### Step 3: Setup Frontend
-\`\`\`cmd
+```cmd
 cd ../frontend
 npm install
-\`\`\`
+```
 
 #### Step 4: Configure Environment Variables
 
 **Backend (.env file in backend folder):**
-\`\`\`
-MONGODB_URI=mongodb://localhost:27017/sweet-shop
+```
+MONGODB_URI=your-mongodb-api
 ACCESS_TOKEN_SECRET=your-access-token-secret
 REFRESH_TOKEN_SECRET=your-refresh-token-secret
 PORT=5000
 NODE_ENV=development
 FRONTEND_URL=http://localhost:3000
-\`\`\`
+```
 
 **Frontend (.env file in frontend folder):**
-\`\`\`
+```
 VITE_API_URL=http://localhost:5000/api
-\`\`\`
+```
 
 ## Running the Application
 
 ### Development Mode
 
 **Terminal 1 - Start Backend:**
-\`\`\`cmd
+```cmd
 cd backend
 npm run dev
-\`\`\`
+```
 
 **Terminal 2 - Start Frontend:**
-\`\`\`cmd
+```cmd
 cd frontend
 npm run dev
-\`\`\`
+```
 
 **Terminal 3 - Run Tests (Optional):**
-\`\`\`cmd
+```cmd
 cd tests
 npm test
-\`\`\`
+```
 
 ### Production Build
 
 **Backend:**
-\`\`\`cmd
+```cmd
 cd backend
 npm start
-\`\`\`
+```
 
 **Frontend:**
-\`\`\`cmd
+```cmd
 cd frontend
 npm run build
 npm run preview
-\`\`\`
+```
 
 ## API Documentation
 
@@ -146,19 +146,19 @@ npm run preview
 ## Testing
 
 ### Run All Tests
-\`\`\`cmd
+```cmd
 npm test
-\`\`\`
+```
 
 ### Run Specific Test Suite
-\`\`\`cmd
+```cmd
 npm test -- auth.test.js
-\`\`\`
+```
 
 ### Generate Coverage Report
-\`\`\`cmd
+```cmd
 npm test -- --coverage
-\`\`\`
+```
 
 ## My AI Usage
 
@@ -204,7 +204,7 @@ npm test -- --coverage
 
 ## Project Structure
 
-\`\`\`
+```
 sweet-shop-management/
 ├── backend/
 │   ├── config/          # Database & constants config
@@ -226,20 +226,20 @@ sweet-shop-management/
 │   ├── backend/         # Jest tests
 │   └── jest.config.js
 └── README.md
-\`\`\`
+```
 
 ## Git Commit Commands with AI Co-author
 
 ### Example Commits
-\`\`\`bash
+```bash
 git commit -m "feat: Initialize project structure with backend and frontend
 
 Used v0 to scaffold project structure and generate initial configuration files.
 
 Co-authored-by: v0 <v0@users.noreply.github.com>"
-\`\`\`
+```
 
-\`\`\`bash
+```bash
 git commit -m "feat: Implement JWT authentication system
 
 - Added token generation and verification
@@ -248,9 +248,9 @@ git commit -m "feat: Implement JWT authentication system
 
 Co-authored-by: v0 <v0@users.noreply.github.com>
 Co-authored-by: ChatGPT <chatgpt@users.noreply.github.com>"
-\`\`\`
+```
 
-\`\`\`bash
+```bash
 git commit -m "feat: Build React components for sweet shop UI
 
 - Created SweetCard, Navbar, Footer components
@@ -258,9 +258,9 @@ git commit -m "feat: Build React components for sweet shop UI
 - Added real-time validation
 
 Co-authored-by: v0 <v0@users.noreply.github.com>"
-\`\`\`
+```
 
-\`\`\`bash
+```bash
 git commit -m "test: Add comprehensive test suite for API endpoints
 
 - 5 test cases for authentication
@@ -268,7 +268,7 @@ git commit -m "test: Add comprehensive test suite for API endpoints
 - Included edge cases and error scenarios
 
 Co-authored-by: v0 <v0@users.noreply.github.com>"
-\`\`\`
+```
 
 ## Security Features
 
