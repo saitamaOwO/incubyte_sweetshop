@@ -307,10 +307,6 @@ Co-authored-by: v0 <v0@users.noreply.github.com>"
 - Backend: Change PORT in .env (default 5000)
 - Frontend: Use `npm run dev -- --port 3001`
 
-## License
-
-MIT License - feel free to use this project for learning and development
-
 ## Contributing
 
 1. Fork the repository
@@ -318,10 +314,3 @@ MIT License - feel free to use this project for learning and development
 3. Commit changes with AI co-author attribution
 4. Push to branch: `git push origin feature/your-feature`
 5. Submit pull request
-
-## Support
-
-For issues and questions, please create an issue on GitHub or contact: support@sweetshop.com
-\`\`\`
-
-## Windows Setup Commands

@@ -16,8 +16,6 @@ export const verifyToken = (req, res, next) => {
       req.user = decoded
       return next()
     }
-
-    // Try refresh token
     const refreshToken = cookies.refreshToken
     if (!refreshToken) {
       return res.status(401).json({ error: true, message: "Please login" })

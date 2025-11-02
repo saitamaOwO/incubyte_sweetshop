@@ -50,7 +50,6 @@ const sweetSchema = new mongoose.Schema(
   { timestamps: true },
 )
 
-// Index for search and pagination
 sweetSchema.index({ name: "text", category: 1, price: 1 })
 
 export default mongoose.model("Sweet", sweetSchema)

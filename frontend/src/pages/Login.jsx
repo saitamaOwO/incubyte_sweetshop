@@ -19,7 +19,6 @@ export const Login = ({ onAuthSuccess }) => {
               isLogin={true}
               onClose={() => {}}
               onSubmit={async (data) => {
-                // Handle customer login
                 await onAuthSuccess(data)
               }}
             />

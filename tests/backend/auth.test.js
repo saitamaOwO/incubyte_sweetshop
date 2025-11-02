@@ -4,7 +4,6 @@ import User from "../../backend/models/User.js"
 
 describe("Authentication Endpoints", () => {
   beforeAll(async () => {
-    // Clear users collection
     await User.deleteMany({})
   })
 

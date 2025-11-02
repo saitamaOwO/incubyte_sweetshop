@@ -53,13 +53,9 @@ userSchema.pre("save", async function (next) {
     next(error)
   }
 })
-
-// Method to compare passwords
 userSchema.methods.matchPassword = async function (enteredPassword) {
   return await bcrypt.compare(enteredPassword, this.password)
 }
-
-// Remove sensitive data
 userSchema.methods.toJSON = function () {
   const obj = this.toObject()
   delete obj.password

@@ -8,7 +8,7 @@ export const REFRESH_TOKEN_SECRET = process.env.REFRESH_TOKEN_SECRET || "refresh
 
 export const RATE_LIMITS = {
   FRONTEND: {
-    windowMs: 15 * 60 * 1000, // 15 minutes
+    windowMs: 15 * 60 * 1000,
     max: 100,
   },
   AUTH: {

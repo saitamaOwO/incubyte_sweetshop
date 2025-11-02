@@ -8,8 +8,6 @@ describe("Sweets Endpoints", () => {
 
   beforeAll(async () => {
     await Sweet.deleteMany({})
-
-    // Create a test sweet
     const sweet = await Sweet.create({
       name: "Chocolate Bar",
       category: "Chocolate",

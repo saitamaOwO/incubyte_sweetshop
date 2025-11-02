@@ -10,8 +10,6 @@ export const register = asyncHandler(async (req, res) => {
   if (existingUser) {
     return res.status(400).json({ error: true, message: "User already exists" })
   }
-
-  // Create new user (only admin can create admin users)
   const user = await User.create({
     name,
     email,
@@ -46,8 +44,6 @@ export const register = asyncHandler(async (req, res) => {
 
 export const login = asyncHandler(async (req, res) => {
   const { email, phoneNumber, password } = req.body
-
-  // Find user by email or phone
   const user = await User.findOne({
     $or: [{ email: email?.toLowerCase() }, { phoneNumber }],
   }).select("+password")
@@ -55,8 +51,6 @@ export const login = asyncHandler(async (req, res) => {
   if (!user) {
     return res.status(401).json({ error: true, message: "Invalid credentials" })
   }
-
-  // Check password
   const isPasswordValid = await user.matchPassword(password)
   if (!isPasswordValid) {
     return res.status(401).json({ error: true, message: "Invalid credentials" })

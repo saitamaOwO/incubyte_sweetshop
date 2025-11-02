@@ -30,7 +30,6 @@ out/
 # Testing
 coverage/
 .nyc_output/
-
 # OS
 Thumbs.db
 .DS_Store
